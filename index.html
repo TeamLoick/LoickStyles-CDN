@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LoickStyles</title>
+  <link rel="stylesheet" href="../css/global.css" async defer />
+  <link rel="stylesheet" href="../css/modules/buttons.css" async defer />
+  <link rel="stylesheet" href="../css/modules/cards.css" async defer />
+  <link rel="stylesheet" href="../css/modules/inputs.css" async defer />
+  <link rel="stylesheet" href="../css/modules/modals.css" async defer />
+  <link rel="stylesheet" href="../css/modules/toasts.css" async defer />
+  <link rel="stylesheet" href="../css/modules/topbar.css" async defer />
+  <link rel="stylesheet" href="../css/modules/codeblocks.css" async defer />
+</head>
+
+<body>
+  <nav class="ltopbar fixed">
+    <section class="flex row center">
+      <img src="./assets/logo.png" width="40px">
+      <p>Loick Styles</p>
+    </section>
+    <ul>
+      <a href="https://dsc.gg/loick" target="_blank">
+        <li>Discord</li>
+      </a>
+      <a href="#gettingStarted">
+        <li>Getting started</li>
+      </a>
+      <a href="#samples">
+        <li>Samples</li>
+      </a>
+    </ul>
+  </nav>
+
+  <main class="lmain">
+    <section id="gettingStarted">
+      <h1>Getting started</h1>
+      <p>You only needs to import what do you need. The only import that is required is the global import.</p>
+      You can import loick styles as basic css/scss and js files.
+      Here you have the file routes:</p>
+      <ul>
+        <li>Global: <b onclick="copyInsideValue(this)">https://teamloick.github.io/LoickStyles/css/global.css</b></li>
+        <li>Buttons: <b
+            onclick="copyInsideValue(this)">https://teamloick.github.io/LoickStyles/css/modules/buttons.css</b></li>
+        <li>Inputs: <b
+            onclick="copyInsideValue(this)">https://teamloick.github.io/LoickStyles/css/modules/inputs.css</b></li>
+        <li>Cards: <b onclick="copyInsideValue(this)">https://teamloick.github.io/LoickStyles/css/modules/cards.css</b>
+        </li>
+        <li>TopBar: <b
+            onclick="copyInsideValue(this)">https://teamloick.github.io/LoickStyles/css/modules/topbar.css</b></li>
+        <li>Modals: <b
+            onclick="copyInsideValue(this)">https://teamloick.github.io/LoickStyles/css/modules/modals.css</b></li>
+        <li>Toasts: <b
+            onclick="copyInsideValue(this)">https://teamloick.github.io/LoickStyles/css/modules/toasts.css</b></li>
+      </ul>
+    </section>
+    <section id="samples" class="flex column center">
+      <h2>Buttons</h2>
+      <div class="flex row center">
+        <button class="lbtn primary" type="button">Primary</button>
+        <button class="lbtn secondary" type="button">Secondary</button>
+      </div>
+      <h2>Inputs</h2>
+      <div class="flex row center">
+        <input type="text" class="linput underline" value="Underline" />
+        <input type="text" class="linput border" value="Border" />
+        <input type="text" class="linput bg" value="Background" />
+      </div>
+    </section>
+  </main>
+  <script type="text/javascript" async defer>
+    function copyInsideValue(t) {
+      var value = t.innerHTML;
+      /* Copy the text inside the text field */
+      navigator.clipboard.writeText(value);
+
+      /* Alert the copied text */
+      alert("Copied link");
+    }
+  </script>
+</body>
+
+</html>
