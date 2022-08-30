@@ -1,0 +1,43 @@
+@use '../vars' as *;
+
+.lbtn {
+  padding: 8px 25px;
+  border-radius: $border-radius;
+  outline: none;
+  border: none;
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  user-select: none;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  transition: all .5s;
+
+  &.primary {
+    background-color: $red;
+    color: $white;
+    border: 1px solid $white;
+
+    &:hover {
+      filter: brightness(1.25);
+    }
+  }
+
+  &.secondary {
+    background: none;
+    color: rgba($red, .5);
+    border: 1px solid rgba($red, .5);
+
+    &:hover {
+      color: $red;
+      border: 1px solid $red;
+    }
+  }
+
+  &:active {
+    transform: scale(.9)
+  }
+}
