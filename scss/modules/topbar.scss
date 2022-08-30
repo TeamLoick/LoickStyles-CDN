@@ -1,0 +1,35 @@
+@use '../vars' as *;
+
+.ltopbar {
+  top: 0;
+  left: 0;
+  background: $grey_200;
+  width: 100%;
+  height: 6vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  &.fixed {
+    position: fixed;
+  }
+
+  &.absolute {
+    position: absolute;
+  }
+
+  &.floating {
+    top: 2vh;
+    left: 2.5vw;
+    width: 95vw;
+    border-radius: $border-radius;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}

@@ -1,0 +1,38 @@
+.lbtn {
+  padding: 8px 25px;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  user-select: none;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  transition: all 0.5s;
+}
+.lbtn.primary {
+  background-color: #fe4243;
+  color: #fafafa;
+  border: 1px solid #fafafa;
+}
+.lbtn.primary:hover {
+  filter: brightness(1.25);
+}
+.lbtn.secondary {
+  background: none;
+  color: rgba(254, 66, 67, 0.5);
+  border: 1px solid rgba(254, 66, 67, 0.5);
+}
+.lbtn.secondary:hover {
+  color: #fe4243;
+  border: 1px solid #fe4243;
+}
+.lbtn:active {
+  transform: scale(0.9);
+}
+
+/*# sourceMappingURL=buttons.css.map */

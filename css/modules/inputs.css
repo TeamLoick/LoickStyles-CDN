@@ -1,0 +1,41 @@
+.linput {
+  color: #fafafa;
+  outline: none;
+  font-size: 1rem;
+  padding: 0.25rem;
+  border: none;
+  background: none;
+  transition: all 0.3s;
+}
+.linput.underline {
+  border-bottom: 1px solid rgba(254, 66, 67, 0.5);
+}
+.linput.underline:hover {
+  border-bottom: 1px solid rgba(254, 66, 67, 0.75);
+}
+.linput.underline:focus {
+  border-bottom: 1px solid #fe4243;
+}
+.linput.border {
+  border-radius: 4px;
+  border: 1px solid rgba(254, 66, 67, 0.5);
+}
+.linput.border:hover {
+  border: 1px solid rgba(254, 66, 67, 0.75);
+}
+.linput.border:focus {
+  border: 1px solid #fe4243;
+}
+.linput.bg {
+  border-radius: 4px;
+  background: #252525;
+  border: 1px solid #131313;
+}
+.linput.bg:hover {
+  border-color: #181818;
+}
+.linput.bg:focus {
+  border-color: #fe4243;
+}
+
+/*# sourceMappingURL=inputs.css.map */
