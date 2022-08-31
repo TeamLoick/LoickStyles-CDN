@@ -5,6 +5,8 @@ body {
   margin: 0;
   background: #181818;
   padding-bottom: 2vh;
+  min-height: 100vh;
+  height: fit-content;
   color: #fafafa;
 }
 
@@ -80,7 +82,7 @@ a.link:hover {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 6px;
 }
 
 /* Track */
@@ -90,7 +92,9 @@ a.link:hover {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(254, 66, 67, 0.5);
+  background: rgba(254, 66, 67, 0.75);
+  cursor: pointer;
+  transition: all 0.3s;
   border-radius: 4px;
 }
 

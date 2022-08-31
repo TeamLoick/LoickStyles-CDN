@@ -7,6 +7,8 @@ body {
   margin: 0;
   background: $grey_300;
   padding-bottom: 2vh;
+  min-height: 100vh;
+  height: fit-content;
   color: $white;
 }
 
@@ -91,7 +93,7 @@ a {
 // Scrollbar
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 6px;
 }
 
 /* Track */
@@ -101,7 +103,9 @@ a {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba($red, .5);
+  background: rgba($red, .75);
+  cursor: pointer;
+  transition: all 0.3s;
   border-radius: $border-radius-1;
 }
 
