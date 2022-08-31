@@ -1,3 +1,8 @@
+ul {
+  padding: 0;
+  width: fit-content;
+}
+
 li {
   cursor: pointer;
   width: fit-content;
