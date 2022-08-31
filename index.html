@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LoickStyles</title>
+  <link rel="stylesheet" href="https://teamloick.github.io/LoickStyles/assets/style.css" async defer />
   <link rel="stylesheet" href="https://teamloick.github.io/LoickStyles/css/global.css" async defer />
   <link rel="stylesheet" href="https://teamloick.github.io/LoickStyles/css/modules/buttons.css" async defer />
   <link rel="stylesheet" href="https://teamloick.github.io/LoickStyles/css/modules/cards.css" async defer />
@@ -39,22 +40,15 @@
     <section id="gettingStarted">
       <h1>Getting started</h1>
       <p>You only needs to import what do you need. The only import that is required is the global import.</p>
-      You can import loick styles as basic css/scss and js files.
-      Here you have the file routes:</p>
       <ul>
-        <li>Global: <b onclick="copyInsideValue(this)">https://teamloick.github.io/LoickStyles/css/global.css</b></li>
-        <li>Buttons: <b
-            onclick="copyInsideValue(this)">https://teamloick.github.io/LoickStyles/css/modules/buttons.css</b></li>
-        <li>Inputs: <b
-            onclick="copyInsideValue(this)">https://teamloick.github.io/LoickStyles/css/modules/inputs.css</b></li>
-        <li>Cards: <b onclick="copyInsideValue(this)">https://teamloick.github.io/LoickStyles/css/modules/cards.css</b>
-        </li>
-        <li>TopBar: <b
-            onclick="copyInsideValue(this)">https://teamloick.github.io/LoickStyles/css/modules/topbar.css</b></li>
-        <li>Modals: <b
-            onclick="copyInsideValue(this)">https://teamloick.github.io/LoickStyles/css/modules/modals.css</b></li>
-        <li>Toasts: <b
-            onclick="copyInsideValue(this)">https://teamloick.github.io/LoickStyles/css/modules/toasts.css</b></li>
+        <li onClick="copyInsideValue('global')">Global import</li>
+        <li onClick="copyInsideValue('buttons')">Buttons import</li>
+        <li onClick="copyInsideValue('inputs')">Inputs import</li>
+        <li onClick="copyInsideValue('cards')">Cards import</li>
+        <li onClick="copyInsideValue('topbar')">TopBar import</li>
+        <li onClick="copyInsideValue('modals')">Modals import</li>
+        <li onClick="copyInsideValue('toasts')">Toasts import</li>
+        <li onClick="copyInsideValue('all')">Import All</li>
       </ul>
     </section>
     <section id="samples" class="flex column center">
@@ -73,12 +67,24 @@
   </main>
   <script type="text/javascript" async defer>
     function copyInsideValue(t) {
-      var value = t.innerHTML;
+      var value = getImport(t);
       /* Copy the text inside the text field */
       navigator.clipboard.writeText(value);
 
       /* Alert the copied text */
-      alert("Copied link");
+      alert(`Copied import for: ${t}`);
+    }
+    function getImport(t) {
+      switch (t) {
+        case 'global': return ' <link rel="stylesheet" href="https://teamloick.github.io/LoickStyles/css/global.css" async defer />'
+        case 'buttons': return ' <link rel="stylesheet" href="https://teamloick.github.io/LoickStyles/css/modules/buttons.css" async defer />'
+        case 'inputs': return ' <link rel="stylesheet" href="https://teamloick.github.io/LoickStyles/css/modules/inputs.css" async defer />'
+        case 'cards': return ' <link rel="stylesheet" href="https://teamloick.github.io/LoickStyles/css/modules/cards.css" async defer />'
+        case 'topbar': return ' <link rel="stylesheet" href="https://teamloick.github.io/LoickStyles/css/modules/topbar.css" async defer />'
+        case 'modals': return ' <link rel="stylesheet" href="https://teamloick.github.io/LoickStyles/css/modules/modals.css" async defer />\n<script src="https://teamloick.github.io/LoickStyles/js/modals.js" async defer />'
+        case 'toasts': return ' <link rel="stylesheet" href="https://teamloick.github.io/LoickStyles/css/modules/toasts.css" async defer />\n<script src="https://teamloick.github.io/LoickStyles/js/toasts.js" async defer />'
+        case 'all': return `${getImport('global')}\n${getImport('buttons')}\n ${getImport('inputs')}\n ${getImport('cards')}\n ${getImport('topbar')}\n ${getImport('modals')}\n ${getImport('toasts')}`
+      }
     }
   </script>
 </body>
