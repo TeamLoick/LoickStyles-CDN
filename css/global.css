@@ -4,6 +4,7 @@ body {
   padding: 0;
   margin: 0;
   background: #181818;
+  padding-bottom: 2vh;
   color: #fafafa;
 }
 
@@ -75,6 +76,27 @@ a.link:hover {
 .lmain b {
   cursor: pointer;
   user-select: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(254, 66, 67, 0.5);
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #fe4243;
 }
 
 /*# sourceMappingURL=global.css.map */

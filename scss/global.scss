@@ -6,6 +6,7 @@ body {
   padding: 0;
   margin: 0;
   background: $grey_300;
+  padding-bottom: 2vh;
   color: $white;
 }
 
@@ -85,4 +86,26 @@ a {
     cursor: pointer;
     user-select: none;
   }
+}
+
+// Scrollbar
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba($red, .5);
+  border-radius: $border-radius-1;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $red;
 }
