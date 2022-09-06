@@ -5,16 +5,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LoickStyles</title>
-  <link rel="stylesheet" href="https://teamloick.github.io/LoickStyles/assets/style.css" async defer />
-  <link rel="stylesheet" href="https://teamloick.github.io/LoickStyles/css/global.css" async defer />
-  <link rel="stylesheet" href="https://teamloick.github.io/LoickStyles/css/modules/buttons.css" async defer />
-  <link rel="stylesheet" href="https://teamloick.github.io/LoickStyles/css/modules/cards.css" async defer />
-  <link rel="stylesheet" href="https://teamloick.github.io/LoickStyles/css/modules/inputs.css" async defer />
-  <link rel="stylesheet" href="https://teamloick.github.io/LoickStyles/css/modules/modals.css" async defer />
-  <link rel="stylesheet" href="https://teamloick.github.io/LoickStyles/css/modules/toasts.css" async defer />
-  <link rel="stylesheet" href="https://teamloick.github.io/LoickStyles/css/modules/topbar.css" async defer />
-  <link rel="stylesheet" href="https://teamloick.github.io/LoickStyles/css/modules/codeblocks.css" async defer />
+  <title>LoickStyles-CDN</title>
+  <link rel="stylesheet" href="https://teamloick.github.io/LoickStyles-CDN/assets/style.css" async defer />
+  <link rel="stylesheet" href="https://teamloick.github.io/LoickStyles-CDN/css/global.css" async defer />
+  <link rel="stylesheet" href="https://teamloick.github.io/LoickStyles-CDN/css/modules/buttons.css" async defer />
+  <link rel="stylesheet" href="https://teamloick.github.io/LoickStyles-CDN/css/modules/cards.css" async defer />
+  <link rel="stylesheet" href="https://teamloick.github.io/LoickStyles-CDN/css/modules/inputs.css" async defer />
+  <link rel="stylesheet" href="https://teamloick.github.io/LoickStyles-CDN/css/modules/modals.css" async defer />
+  <link rel="stylesheet" href="https://teamloick.github.io/LoickStyles-CDN/css/modules/toasts.css" async defer />
+  <link rel="stylesheet" href="https://teamloick.github.io/LoickStyles-CDN/css/modules/topbar.css" async defer />
+  <link rel="stylesheet" href="https://teamloick.github.io/LoickStyles-CDN/css/modules/codeblocks.css" async defer />
 </head>
 
 <body>
@@ -79,13 +79,13 @@
     }
     function getImport(t) {
       switch (t) {
-        case 'global': return ' <link rel="stylesheet" href="https://teamloick.github.io/LoickStyles/css/global.css" async defer />'
-        case 'buttons': return ' <link rel="stylesheet" href="https://teamloick.github.io/LoickStyles/css/modules/buttons.css" async defer />'
-        case 'inputs': return ' <link rel="stylesheet" href="https://teamloick.github.io/LoickStyles/css/modules/inputs.css" async defer />'
-        case 'cards': return ' <link rel="stylesheet" href="https://teamloick.github.io/LoickStyles/css/modules/cards.css" async defer />'
-        case 'topbar': return ' <link rel="stylesheet" href="https://teamloick.github.io/LoickStyles/css/modules/topbar.css" async defer />'
-        case 'modals': return ' <link rel="stylesheet" href="https://teamloick.github.io/LoickStyles/css/modules/modals.css" async defer />\n<script src="https://teamloick.github.io/LoickStyles/js/modals.js" async defer />'
-        case 'toasts': return ' <link rel="stylesheet" href="https://teamloick.github.io/LoickStyles/css/modules/toasts.css" async defer />\n<script src="https://teamloick.github.io/LoickStyles/js/toasts.js" async defer />'
+        case 'global': return ' <link rel="stylesheet" href="https://teamloick.github.io/LoickStyles-CDN/css/global.css" async defer />'
+        case 'buttons': return ' <link rel="stylesheet" href="https://teamloick.github.io/LoickStyles-CDN/css/modules/buttons.css" async defer />'
+        case 'inputs': return ' <link rel="stylesheet" href="https://teamloick.github.io/LoickStyles-CDN/css/modules/inputs.css" async defer />'
+        case 'cards': return ' <link rel="stylesheet" href="https://teamloick.github.io/LoickStyles-CDN/css/modules/cards.css" async defer />'
+        case 'topbar': return ' <link rel="stylesheet" href="https://teamloick.github.io/LoickStyles-CDN/css/modules/topbar.css" async defer />'
+        case 'modals': return ' <link rel="stylesheet" href="https://teamloick.github.io/LoickStyles-CDN/css/modules/modals.css" async defer />\n<script src="https://teamloick.github.io/LoickStyles-CDN/js/modals.js" async defer />'
+        case 'toasts': return ' <link rel="stylesheet" href="https://teamloick.github.io/LoickStyles-CDN/css/modules/toasts.css" async defer />\n<script src="https://teamloick.github.io/LoickStyles-CDN/js/toasts.js" async defer />'
         case 'all': return `${getImport('global')}\n${getImport('buttons')}\n ${getImport('inputs')}\n ${getImport('cards')}\n ${getImport('topbar')}\n ${getImport('modals')}\n ${getImport('toasts')}`
       }
     }
